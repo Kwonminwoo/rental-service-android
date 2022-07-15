@@ -35,4 +35,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // 하단 네비게이션 바 추가
+    // 출처: https://blue-ilike.tistory.com/entry/Android-Studio-바텀-네비게이션-사용하기-Bottom-Navigation [컴공인영:티스토리]
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+
 }
