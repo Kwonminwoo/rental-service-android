@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bottomNav= findViewById(R.id.bottom_Navi);
+
         fragment_home = new Fragment_Home();
         fragment_upload = new Fragment_Upload();
         fragment_chatting = new Fragment_Chatting();
@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.item_setting:
                     replace_main_frame_to(fragment_setting_user_info);
                     break;
-
             }
             return true;
         });
