@@ -28,7 +28,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="4"
                 android:padding="5dp"
-                android:text="정보 관리"
+                android:text="@string/_on_setting_fragment_info_manage"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#a0000000"
-                android:contentDescription="설정"
+                android:contentDescription="@string/_on_setting_fragment_setting"
                 app:icon="@android:drawable/ic_menu_manage" />
         </LinearLayout>
 
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="후기"
+                android:text="@string/_on_setting_fragment_review"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -127,6 +127,7 @@
             android:layout_height="0dp"
             android:layout_margin="1dp"
             android:layout_weight="3"
+            android:baselineAligned="false"
             android:orientation="horizontal"
             android:padding="5dp"
             android:weightSum="2">
@@ -144,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="빌린 믈건, 장소"
+                    android:text="@string/_on_setting_fragment_borr"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -175,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="빌려준 물건, 장소"
+                    android:text="@string/_on_setting_fragment_brrd"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
