@@ -3,6 +3,6 @@
     <string name="_on_setting_fragment_setting">설정</string>
     <string name="_on_setting_fragment_info_manage">정보 관리</string>
     <string name="_on_setting_fragment_review">후기</string>
-    <string name="_on_setting_fragment_borr">빌린 믈건, 장소</string>
+    <string name="_on_setting_fragment_borr">빌린 물건, 장소</string>
     <string name="_on_setting_fragment_brrd">빌려준 물건, 장소</string>
 </resources>
