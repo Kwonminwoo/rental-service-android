@@ -20,6 +20,11 @@
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/setting_bs_list.xml" value="0.2753623188405797" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/setting_review_list.xml" value="0.2753623188405797" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/menu/bottom_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/notice_bg.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_location.xml" value="0.16576086956521738" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_setting_user_info.xml" value="0.16576086956521738" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/xml/network_security_config.xml" value="0.16576086956521738" />
       </map>
     </option>
   </component>
