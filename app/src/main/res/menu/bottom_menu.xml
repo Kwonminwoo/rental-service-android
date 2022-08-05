@@ -3,22 +3,22 @@
     <item
         android:id="@+id/item_home"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/drawable_icon_home"
         android:title="홈" />
     <item
         android:id="@+id/item_upload"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/drawable_icon_upload"
         android:title="업로드" />
     <item
         android:id="@+id/item_chatting"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/drawable_icon_chat"
         android:title="채팅" />
     <item
         android:id="@+id/item_setting"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/drawable_icon_settings"
         android:title="설정" />
 
 
