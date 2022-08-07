@@ -42,4 +42,8 @@ dependencies {
     // 출처: https://blue-ilike.tistory.com/entry/Android-Studio-바텀-네비게이션-사용하기-Bottom-Navigation [컴공인영:티스토리]
     implementation 'androidx.navigation:navigation-fragment:2.3.2'
     implementation 'androidx.navigation:navigation-ui:2.3.2'
+
+    //floation button
+    //compile 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
 }

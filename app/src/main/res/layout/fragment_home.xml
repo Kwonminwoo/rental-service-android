@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment_Home">
 
     <ScrollView
@@ -42,36 +43,11 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:gravity="center">
-
-                <!--#BAC8D3-->
-                <ImageButton
-                    android:id="@+id/btnPlace"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="장소"
-                    android:layout_marginRight="50dp"
-                    android:background="@drawable/drawable_icon_location"/>
-
-                <ImageButton
-                    android:id="@+id/btnStuff"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="물건"
-                    android:layout_marginLeft="50dp"
-                    android:background="@drawable/drawable_icon_box"/>
-            </LinearLayout>
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_loanable_stuff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 app:contentPadding="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardUseCompatPadding="true">
@@ -193,5 +169,42 @@
         </LinearLayout>
     </ScrollView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="60dp"
+            fab:fab_addButtonColorNormal="@color/white"
+            fab:fab_addButtonColorPressed="@color/white_pressed"
+            fab:fab_addButtonPlusIconColor="@color/half_black"
+            fab:fab_labelStyle="@style/menu_labels_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_Place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                app:fab_icon="@drawable/drawable_icon_location"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_Stuff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                app:fab_icon="@drawable/drawable_icon_gift_box"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
 
 </FrameLayout>

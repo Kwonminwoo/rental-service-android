@@ -4,10 +4,17 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,7 +24,6 @@ import androidx.fragment.app.Fragment;
 
 public class Fragment_Home extends Fragment {
     TextView textNotice;
-    ImageButton btnPlace, btnStuff;
     CardView cdView_loanable, cdView_loan_requested, cdView_rentable;
     LinearLayout notice;
 
@@ -31,28 +37,12 @@ public class Fragment_Home extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         textNotice = (TextView) view.findViewById(R.id.textNotice);
-        btnPlace = (ImageButton) view.findViewById(R.id.btnPlace);
-        btnStuff = (ImageButton) view.findViewById(R.id.btnStuff);
 
         cdView_loanable = (CardView) view.findViewById(R.id.cdView_loanable_stuff);
         cdView_loan_requested = (CardView) view.findViewById(R.id.cdView_loan_requested_stuff);
         cdView_rentable = (CardView) view.findViewById(R.id.cdView_rentable_place);
 
         notice = (LinearLayout) view.findViewById(R.id.notice);
-
-        btnPlace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        btnStuff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
         cdView_loanable.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +64,33 @@ public class Fragment_Home extends Fragment {
 
             }
         });
+
+//
+//        final View actionB = view.findViewById(R.id.action_b);
+//
+//        FloatingActionButton actionC = new FloatingActionButton(view.getContext());
+//        actionC.setTitle("Hide/Show Action above");
+//        actionC.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                actionB.setVisibility(actionB.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);
+//            }
+//        });
+//
+//        final FloatingActionsMenu menuMultipleActions = (FloatingActionsMenu) view.findViewById(R.id.multiple_actions);
+//        menuMultipleActions.addButton(actionC);
+//
+//
+//        ShapeDrawable drawable = new ShapeDrawable(new OvalShape());
+//        drawable.getPaint().setColor(getResources().getColor(R.color.white));
+//
+//        final FloatingActionButton actionA = (FloatingActionButton) view.findViewById(R.id.action_a);
+//        actionA.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                actionA.setTitle("Action A clicked");
+//            }
+//        });
 
         return view;
     }
