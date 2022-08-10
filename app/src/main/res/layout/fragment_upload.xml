@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Upload">
+    android:backgroundTint="#3F51B5"
+    android:orientation="horizontal">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="upload_item_page" />
+        android:layout_height="500dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="50dp"
+            android:background="#E9E9E9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_baseline_beach_access_24"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="물건명,언제등등"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_baseline_beach_access_24"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="물건명,언제등등"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/request_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#3F51B5"
+            android:text="요청" />
+
+        <Button
+            android:id="@+id/registr_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#3F51B5"
+            android:text="등록" />
+
+
+    </LinearLayout>
 </FrameLayout>
