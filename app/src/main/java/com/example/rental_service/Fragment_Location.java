@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class LocationFragment extends Fragment {
+public class Fragment_Location extends Fragment {
 
-    public LocationFragment() {
+    public Fragment_Location() {
         // Required empty public constructor
     }
 
@@ -19,6 +19,8 @@ public class LocationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_location, container, false);
+
+
 
         //https://webnautes.tistory.com/1319 참고하기
 

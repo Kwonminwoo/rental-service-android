@@ -65,6 +65,8 @@ public class Fragment_Home extends Fragment {
             }
         });
 
+        //https://github.com/Droppers/AnimatedBottomBar
+        //https://github.com/zendesk/android-floating-action-button
 //
 //        final View actionB = view.findViewById(R.id.action_b);
 //
