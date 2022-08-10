@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/no1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="50dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/object_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#919191"
+                android:text="물건" />
+
+            <Button
+                android:id="@+id/place_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#919191"
+                android:text="장소" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#E9E9E9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:text="1......">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/request_btn2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="요청" />
+
+            <Button
+                android:id="@+id/registr_btn2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="등록" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
