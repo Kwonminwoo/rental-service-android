@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 
+import com.example.rental_service.HomeFragment.Fragment_Home;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 

@@ -1,4 +1,4 @@
-package com.example.rental_service;
+package com.example.rental_service.HomeFragment;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.rental_service.R;
 
 public class Fragment_Location extends Fragment {
 
