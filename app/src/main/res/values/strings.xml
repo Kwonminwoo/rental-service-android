@@ -5,4 +5,22 @@
     <string name="_on_setting_fragment_review">후기</string>
     <string name="_on_setting_fragment_borr">빌린 물건, 장소</string>
     <string name="_on_setting_fragment_brrd">빌려준 물건, 장소</string>
+
+
+
+    <!--    채팅 프로필 관련 문자열    -->
+    <string name="home">홈</string>
+    <string name="upload">업로드</string>
+    <string name="chat">채팅</string>
+    <string name="more">더보기</string>
+
+    <string name="profile">프로필사진</string>
+
+
+    <string name="profileName1">정우</string>
+    <string name="profileName2">고양이</string>
+    <string name="profileName3">사람</string>
+    <string name="profileName4">익명</string>
+    <string name="profileName5">나나나</string>
+    <!--    -->
 </resources>

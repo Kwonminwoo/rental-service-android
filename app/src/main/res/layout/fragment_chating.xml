@@ -5,10 +5,297 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_Chatting">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="chatting" />
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bitropride"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/chat"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_menu"
+            tools:layout_editor_absoluteX="0dp">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TableRow
+                android:id="@+id/chatlist1"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/profile1" />
+
+                <LinearLayout
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="정우"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/chat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="안녕하세요 물건 관련해서 연락드려요."
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--            몇 시간 전 표시-->
+                <TextView
+                    android:id="@+id/chatTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:padding="10dp"
+                    android:text="방금"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/chatlist2"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/profile2" />
+
+                <LinearLayout
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="고양이"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/chat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="안녕하세요!"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:padding="10dp"
+                    android:text="1시간 전"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/chatlist3"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/profile3" />
+
+                <LinearLayout
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/profileName3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/chat3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="음하하하!"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatTime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:padding="10dp"
+                    android:text="3시간 전"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/chatlist4"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/profile4" />
+
+                <LinearLayout
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/profileName4"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/chat4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text=":)"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatTime4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:padding="10dp"
+                    android:text="5시간 전"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/chatlist5"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/profile5" />
+
+                <LinearLayout
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/profileName5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/chat5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="제가 찍은 사진입니다."
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatTime5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:padding="10dp"
+                    android:text="1시간 전"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>
