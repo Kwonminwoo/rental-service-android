@@ -49,4 +49,8 @@ dependencies {
 
     //Bottom Animation Bar
     implementation 'nl.joery.animatedbottombar:library:1.1.0'
+
+    //AndroidViewAnimations
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
 }
