@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="설정" />
+    <item
+        android:id="@+id/item_cs_service"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="고객지원" />
+    <item
+        android:id="@+id/item_he"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="개인정보보호" />
+</menu>

@@ -1,18 +1,32 @@
-package com.example.rental_service;
+package com.example.rental_service.setting_user;
+import static android.app.Activity.RESULT_OK;
+
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.rental_service.R;
 import com.example.rental_service.setting_user.BsAdapter;
 import com.example.rental_service.setting_user.BsData;
 import com.example.rental_service.setting_user.BsAdapter;
@@ -20,7 +34,11 @@ import com.example.rental_service.setting_user.BsData;
 import com.example.rental_service.setting_user.ReviewAdapter;
 import com.example.rental_service.setting_user.ReviewData;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Fragment_Setting_User_Info extends Fragment {
 
@@ -39,10 +57,32 @@ public class Fragment_Setting_User_Info extends Fragment {
 
     private Button b1;
 
-    private ImageView imageView;
+    private ImageView image_profile_view;
     private TextView text_name;
     private TextView text_extra1;
     private TextView text_extra2;
+
+
+    private Uri uri;
+
+    ActivityResultLauncher<Intent> startActivityResult = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if( result.getResultCode() == RESULT_OK && result.getData() != null){
+                        uri = result.getData().getData();
+                        try {
+                            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContext().getContentResolver(), uri);
+                            image_profile_view.setImageBitmap(bitmap);
+                            System.out.println(uri);
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
+
 
     public Fragment_Setting_User_Info() {
         // Required empty public constructor
@@ -62,6 +102,18 @@ public class Fragment_Setting_User_Info extends Fragment {
         text_name=v.findViewById(R.id.text_name_fieild);
         text_extra1=v.findViewById(R.id.text_additional_1);
         text_extra2=v.findViewById(R.id.text_additional_2);
+        image_profile_view=v.findViewById(R.id.image_profile);
+        LinearLayout layout = v.findViewById(R.id.texts_layout_on_setting);
+        image_profile_view.setMinimumHeight(layout.getHeight());
+        image_profile_view.setMinimumWidth(layout.getHeight());
+
+        image_profile_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setImageOnLayout();
+
+            }
+        });
 
 
         b1.setOnClickListener(view -> {
@@ -69,6 +121,7 @@ public class Fragment_Setting_User_Info extends Fragment {
             get_B_data();
             get_S_data();
         });
+
 
 
 
@@ -131,5 +184,18 @@ public class Fragment_Setting_User_Info extends Fragment {
         }
         s_Adapter.notifyDataSetChanged();
     }
+    void setImageOnLayout(){
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        Thread t = new Thread (){
+            @Override
+            public void run() {
+                super.run();
+                startActivityResult.launch(intent);
+            }
+        };
+        t.start();
+
+    }//해당 날짜의 식단 사진을 업로드 하는 메서드,예지
 
 }
