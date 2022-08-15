@@ -41,6 +41,15 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/_on_setting_fragment_setting"
+                        android:text="설정"
+                        app:icon="@android:drawable/ic_menu_manage" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -51,21 +60,11 @@
                     android:padding="5dp"
                     android:weightSum="6">
 
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#a0000000"
-                        android:contentDescription="@string/_on_setting_fragment_setting"
-                        app:icon="@android:drawable/ic_menu_manage" />
-
                     <ImageView
                         android:id="@+id/image_profile"
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_margin="5dp"
-                        android:layout_weight="0"
                         android:adjustViewBounds="true"
                         android:minWidth="150dp"
                         android:minHeight="150dp"
@@ -74,10 +73,10 @@
 
                     <LinearLayout
                         android:id="@+id/texts_layout_on_setting"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="5"
                         android:orientation="vertical"
                         android:padding="10dp">
 
