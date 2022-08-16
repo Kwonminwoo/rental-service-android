@@ -28,9 +28,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
-        <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="@string/Kakao_api_key" />
+<!--        <meta-data-->
+<!--            android:name="com.kakao.sdk.AppKey"-->
+<!--            android:value="@string/Kakao_api_key" />-->
     </application>
 
 </manifest>
