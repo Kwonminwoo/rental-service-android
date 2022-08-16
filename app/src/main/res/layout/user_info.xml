@@ -34,7 +34,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="<받은 후기>"
+        android:text="&lt;받은 후기&gt;"
         android:layout_margin="40dp"
         android:textColor="@color/black"
         android:textSize="50dp"/>
