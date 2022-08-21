@@ -18,7 +18,7 @@ public interface RetrofitAPI {
          ^ 괄호 내부에 상세 URL을 추가하여 RetrofitClient의 BaseURL+괄호내부 URL 하여 해당 주소로 GET요청을 보내는것 입니다.
     다른 HTTP 요청도 비슷합니다.
     @POST() @UPDATE() @DELETE() 등,,
-    retrofit2.http.HTTP 메서드 종류에대한 노테이션과 함수 정의 부분은 1대1로 매칭됩니다.
+    HTTP 메서드 노테이션과 함수 정의 부분은 1대1로 매칭됩니다.
 
     @GET("comments")
         Call <CommentsDto> getComments(@Body("day") String day);
@@ -34,7 +34,7 @@ public interface RetrofitAPI {
     이번엔 GET노테이션옆 괄호에 {day}가 추가된 점을 주목 합니다.
     중괄호 안에 있는 값과 @Path()의 괄호 안의 값이 같다면 url을 동적으로 수정합니다.
     매개변수로 넘어온 스트링 값이 url에 추가될 것 입니다.
-    43.200.172.82:8081/comments/2022-02-21로 get 요청을 보낼 것 입니다.*/
+    최종적으로 url은 43.200.172.82:8081/comments/2022-02-21이 되고 이 url로 get 요청을 보낼 것 입니다.*/
 
 
 
