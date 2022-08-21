@@ -54,4 +54,10 @@ dependencies {
     //AndroidViewAnimations
     implementation 'com.daimajia.easing:library:2.0@aar'
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+
+    //Retrofit2 libs for networking purpose
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
 }
