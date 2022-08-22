@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/drawable_bg_notice.xml" value="0.1" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/fab_label_background.xml" value="0.1" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/ic_baseline_beach_access_24.xml" value="0.1" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/ic_chat.xml" value="0.1" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/drawable/ic_send.xml" value="0.1" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/activity_bottom_nav.xml" value="0.3109375" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/activity_home.xml" value="0.31197916666666664" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/activity_main.xml" value="0.3078125" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/activity_seting_user_info.xml" value="0.2006340579710145" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/activity_splash.xml" value="0.15185185185185185" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/frag1.xml" value="0.3182291666666667" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/frag2.xml" value="0.3182291666666667" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/frag3.xml" value="0.5588541666666667" />
@@ -28,6 +35,7 @@
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/user_info.xml" value="0.14" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/layout/user_review.xml" value="0.1890625" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/menu/bottom_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/2022_primitive_app_B/app/src/main/res/menu/setting_top_items.xml" value="0.4466666666666667" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/drawable_bg_notice.xml" value="0.2535" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/fab_label_background.xml" value="0.202" />
@@ -57,6 +65,18 @@
         <entry key="..\:/Users/user/Desktop/rental-service-android/app/src/main/res/layout/place_list.xml" value="0.264" />
         <entry key="..\:/Users/user/Desktop/rental-service-android/app/src/main/res/layout/user_info.xml" value="0.1480978260869565" />
         <entry key="..\:/Users/user/Desktop/rental-service-android/app/src/main/res/layout/user_review.xml" value="0.1480978260869565" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_chating.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_home.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_location.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_request.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_setting_user_info.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/fragment_upload.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/place_item.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/place_list.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/setting_bs_list.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/setting_review_list.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/user_info.xml" value="0.31666666666666665" />
+        <entry key="..\:/rental-service-android/app/src/main/res/layout/user_review.xml" value="0.31666666666666665" />
         <entry key="app/src/main/res/drawable/ic_send.xml" value="0.106" />
         <entry key="app/src/main/res/drawable/profile_circle.xml" value="0.106" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
