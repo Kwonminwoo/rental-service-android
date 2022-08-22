@@ -1,9 +1,10 @@
 package com.example.rental_service._Network_retrofit2;
 
+import com.example.rental_service.Data_objects.Item_DTO;
+
+import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.DELETE;
 import retrofit2.http.GET;
-import retrofit2.http.HTTP;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -35,7 +36,13 @@ public interface RetrofitAPI {
     중괄호 안에 있는 값과 @Path()의 괄호 안의 값이 같다면 url을 동적으로 수정합니다.
     매개변수로 넘어온 스트링 값이 url에 추가될 것 입니다.
     최종적으로 url은 43.200.172.82:8081/comments/2022-02-21이 되고 이 url로 get 요청을 보낼 것 입니다.*/
-
-
+    @GET("images/profile/{user_id}")
+    Call<String> get_profile_image(@Path("user_id") String user_id);
+    @POST("add/images/profile/{user_id}")
+    Call<String> post_profile_image(@Path("user_id") String user_id,@Body String encoded_image);
+    @GET("items/{item_index}}")
+    Call <Item_DTO> get_item(@Path("item_index")int item_index);
+    @POST("add/items")
+    Call <String> post_item(@Body Item_DTO Item_DTO);
 
 }
