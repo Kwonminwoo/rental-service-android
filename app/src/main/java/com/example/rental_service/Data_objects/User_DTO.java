@@ -3,26 +3,13 @@ package com.example.rental_service.Data_objects;
 import com.google.gson.annotations.SerializedName;
 
 public class User_DTO {
-    @SerializedName("my_index")
-    private int my_index;
-
-    @SerializedName("owners_id")
-    private String user_ID;
-
-    @SerializedName("my_index")
-    private String name;
-
-    @SerializedName("my_index")
-    private String nickname;
-
-    @SerializedName("my_index")
-    private String Address;
-
-    @SerializedName("my_index")
-    private String tel;
-
-    @SerializedName("my_index")
-    private String phone_num;
+    @SerializedName("my_index")     private int my_index;
+    @SerializedName("owners_id")    private String user_ID;
+    @SerializedName("my_index")     private String name;
+    @SerializedName("my_index")     private String nickname;
+    @SerializedName("my_index")     private String Address;
+    @SerializedName("my_index")     private String tel;
+    @SerializedName("my_index")     private String phone_num;
 
     public int getMy_index() {
         return my_index;

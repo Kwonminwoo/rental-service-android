@@ -2,9 +2,9 @@ package com.example.rental_service.Data_objects;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Item_DTO {
+public class Item {
     @SerializedName("my_index")             private int my_index;
-    @SerializedName("owners_id")            private String owners_user_id;
+    @SerializedName("owners_index")         private String owners_user_index;
     @SerializedName("uploaded_date_time")   private String uploaded_date_time;
     @SerializedName("title")                private String title;
     @SerializedName("content")              private String content;
@@ -41,12 +41,12 @@ public class Item_DTO {
         this.my_index = my_index;
     }
 
-    public String getOwners_user_id() {
-        return owners_user_id;
+    public String getOwners_user_index() {
+        return owners_user_index;
     }
 
-    public void setOwners_user_id(String owners_user_id) {
-        this.owners_user_id = owners_user_id;
+    public void setOwners_user_index(String owners_user_index) {
+        this.owners_user_index = owners_user_index;
     }
 
     public String getTitle() {

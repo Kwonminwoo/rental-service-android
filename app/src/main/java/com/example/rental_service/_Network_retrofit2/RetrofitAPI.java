@@ -1,10 +1,15 @@
 package com.example.rental_service._Network_retrofit2;
 
-import com.example.rental_service.Data_objects.Item_DTO;
+import com.example.rental_service.Data_objects.Item;
+import com.example.rental_service.Data_objects.Reservation;
+import com.example.rental_service.Data_objects.Reservation_pointer;
+import com.example.rental_service.Data_objects.User_DTO;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -36,13 +41,41 @@ public interface RetrofitAPI {
     중괄호 안에 있는 값과 @Path()의 괄호 안의 값이 같다면 url을 동적으로 수정합니다.
     매개변수로 넘어온 스트링 값이 url에 추가될 것 입니다.
     최종적으로 url은 43.200.172.82:8081/comments/2022-02-21이 되고 이 url로 get 요청을 보낼 것 입니다.*/
-    @GET("images/profile/{user_id}")
-    Call<String> get_profile_image(@Path("user_id") String user_id);
-    @POST("add/images/profile/{user_id}")
+    //
+
+
+//아이템 관련
+    @GET("items/{item_index}")//인덱스에 해당하는 단일 아이템 객체 얻어옴
+    Call <Item> get_item(@Path("item_index")int item_index);
+    @GET("items/by_desc/{item_amount}}")//최신순으로 아이템 amount 만큼 배열로 받아옴
+    Call <Item[]> get_items_by_desc(@Path("item_amount")int item_amount);
+    @POST("add/items")//단일 아이템 객체 업로드
+    Call <String> post_item(@Body Item Item);
+    @GET("reservation_list/{item_index}")
+    Call <Reservation[]> get_reservation_list(@Path("item_index")int item_index);
+    @GET("reservation_list/{item_index}/{reservation_index}")//get_reservation_list_of_user()의 결과로 아이템 인덱스와 그에 상응하는 예약 리스트
+    Call <Reservation> get_reservation_data(@Path("item_index")int item_index, @Path("reservation_index")int reservation_index);
+
+
+
+
+//유저 정보 관련
+    //유저 사진 get, post
+    @GET("images/profile/{user_index}")//베이스 64인코딩된 사진을 리턴 받음
+    Call<String> get_profile_image(@Path("user_index") String user_id);
+    @POST("add/images/profile/{user_id}")//encoded_image는 base64 인코딩 되어 전송 됨.
     Call<String> post_profile_image(@Path("user_id") String user_id,@Body String encoded_image);
-    @GET("items/{item_index}}")
-    Call <Item_DTO> get_item(@Path("item_index")int item_index);
-    @POST("add/items")
-    Call <String> post_item(@Body Item_DTO Item_DTO);
+    //유저 정보 관련 CRUD
+    @GET("users/{user_index}")
+    Call <User_DTO> get_user_data(@Path("user_index") int user_index);
+    @POST("add/users")
+    Call<String> post_new_user(@Body User_DTO user_dto);
+    @PATCH("edit/users/{user_index}")
+    Call<String> edit_user(@Path("user_index") int user_index,@Body User_DTO user_dto);
+    @DELETE("delete/users/{user_index}")
+    Call<String> delete_user(@Path("user_index") int user_index);
+    //유저가 빌린 내역을 가져오는 함수
+    @GET("reservation/user/{user_index}")
+    Call<Reservation_pointer[]> get_reservation_list_of_user(@Path("user_index")int user_index);
 
 }
