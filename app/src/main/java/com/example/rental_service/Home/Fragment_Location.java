@@ -1,4 +1,4 @@
-package com.example.rental_service.HomeFragment;
+package com.example.rental_service.Home;
 
 import android.os.Bundle;
 

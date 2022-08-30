@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".Launch.SplashActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,8 +22,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_margin="5dp"
-                android:background="@drawable/drawable_icon_handshake"
-                android:backgroundTint="@color/white"/>
+                android:background="@drawable/drawable_icon_app"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -37,15 +37,19 @@
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/menu/bottom_menu.xml" value="0.3333333333333333" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/menu/setting_top_items.xml" value="0.4466666666666667" />
         <entry key="..\:/2022_primitive_app_B/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1905" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/app_ic_background.xml" value="0.1905" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/drawable_bg_notice.xml" value="0.2535" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/fab_label_background.xml" value="0.202" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/notice_bg.xml" value="0.183" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/font/font.xml" value="0.28229166666666666" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/activity_login.xml" value="0.1816123188405797" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/activity_splash.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/activity_splash.xml" value="0.144" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_location.xml" value="0.16576086956521738" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_setting_user_info.xml" value="0.16576086956521738" />
+        <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/fragment_stuff.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/layout/test.xml" value="0.20606884057971014" />
         <entry key="..\:/AndroidStudioProjects/rental-service-android/app/src/main/res/xml/network_security_config.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/ejw04/AndroidStudioProjects/rental-service-android/app/src/main/res/drawable/ic_baseline_beach_access_24.xml" value="0.263" />

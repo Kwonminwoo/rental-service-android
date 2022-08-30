@@ -1,4 +1,4 @@
-package com.example.rental_service;
+package com.example.rental_service.Launch;
 
 import android.app.Activity;
 import android.content.Intent;

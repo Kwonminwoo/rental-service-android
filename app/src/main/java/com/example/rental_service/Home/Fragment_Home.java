@@ -1,4 +1,4 @@
-package com.example.rental_service.HomeFragment;
+package com.example.rental_service.Home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,15 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.rental_service.R;
-import com.getbase.floatingactionbutton.FloatingActionButton;
-import com.getbase.floatingactionbutton.FloatingActionsMenu;
-
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.OvalShape;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -7,3 +7,10 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+subprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    }
+}

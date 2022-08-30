@@ -12,9 +12,8 @@ import android.util.Log;
 
 
 import com.example.rental_service.setting_user.Fragment_Setting_User_Info;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import com.example.rental_service.HomeFragment.Fragment_Home;
+import com.example.rental_service.Home.Fragment_Home;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
