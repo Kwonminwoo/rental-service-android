@@ -8,4 +8,9 @@
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/bitropride"/>
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/satisfy_regular"/>
 </font-family>
