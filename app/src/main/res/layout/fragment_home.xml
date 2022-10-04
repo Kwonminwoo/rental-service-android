@@ -127,6 +127,47 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cdView_loan_requested_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/drawable_icon_celebration"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="우리 동네 대여 가능 장소"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                    <!--나중에 수정할 것 imageviews-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="#2d2d2d"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_rentable_place"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
