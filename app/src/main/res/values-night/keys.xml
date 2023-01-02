@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="Kakao_api_key">966538950f4f3af1dd6db0904064dc27</string>-->
+    <string name="Kakao_api_key"></string>
+</resources>

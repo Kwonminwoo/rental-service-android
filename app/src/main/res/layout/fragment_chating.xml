@@ -20,7 +20,7 @@
             android:paddingStart="20dp"
             android:paddingTop="20dp"
             android:paddingEnd="0dp"
-            android:text="@string/chat"
+            android:text="테스트1"
             android:textSize="28sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -158,7 +158,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="@string/profileName3"
+                        android:text="테스트3"
                         android:textSize="16sp" />
 
                     <TextView
@@ -206,7 +206,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="@string/profileName4"
+                        android:text="테스트4"
                         android:textSize="16sp" />
 
                     <TextView
@@ -254,7 +254,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="@string/profileName5"
+                        android:text="테스트5"
                         android:textSize="16sp" />
 
                     <TextView

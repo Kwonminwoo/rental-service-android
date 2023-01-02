@@ -13,7 +13,7 @@
         android:fontFamily="@font/bitropride"
         android:gravity="center"
         android:paddingTop="20dp"
-        android:text="@string/profileName2"
+        android:text="테스트2"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@id/inChat3"
         app:layout_constraintTop_toTopOf="parent" />

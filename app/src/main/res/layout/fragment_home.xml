@@ -46,7 +46,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_loanable_stuff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:layout_marginTop="10dp"
                 app:contentPadding="10dp"
                 app:cardCornerRadius="10dp"
@@ -78,17 +78,17 @@
                     </LinearLayout>
 
                     <!--나중에 수정할 것 imageviews-->
-                    <ImageView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerStuffPos"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:background="#2d2d2d"/>
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_loan_requested_stuff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 app:contentPadding="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardUseCompatPadding="true">
@@ -119,17 +119,17 @@
                     </LinearLayout>
 
                     <!--나중에 수정할 것 imageviews-->
-                    <ImageView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerStuffReque"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:background="#2d2d2d"/>
+                        android:layout_height="match_parent"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_loan_requested_place"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 app:contentPadding="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardUseCompatPadding="true">
@@ -160,17 +160,17 @@
                     </LinearLayout>
 
                     <!--나중에 수정할 것 imageviews-->
-                    <ImageView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerPlacePos"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:background="#2d2d2d"/>
+                        android:layout_height="match_parent"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cdView_rentable_place"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 app:contentPadding="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardUseCompatPadding="true">
@@ -201,10 +201,11 @@
                     </LinearLayout>
 
                     <!--나중에 수정할 것 imageviews-->
-                    <ImageView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerPlaceReque"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:background="#2d2d2d"/>
+                        android:layout_height="match_parent"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
