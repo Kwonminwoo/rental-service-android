@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         //getHashKey();
 
         bottomNav= findViewById(R.id.bottom_Navi);

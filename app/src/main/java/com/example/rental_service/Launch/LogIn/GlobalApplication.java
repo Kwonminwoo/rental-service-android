@@ -17,7 +17,7 @@ public class GlobalApplication extends Application {
         instance = this;
 
 
-       // KakaoSdk.init(this, getResources().getString(R.string.kakao_api_key_for_java));
-        KakaoSdk.init(this, BuildConfig.kakao_api);
+       //KakaoSdk.init(this, getResources().getString(R.string.kakao_api_key_for_java));
+      // KakaoSdk.init(this, BuildConfig.kakao_api);
     }
 }
