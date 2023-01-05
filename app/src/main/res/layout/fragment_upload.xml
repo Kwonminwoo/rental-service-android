@@ -10,68 +10,48 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp">
+        android:layout_height="470dp">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="match_parent"
             android:layout_margin="50dp"
             android:background="#E9E9E9"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/ic_baseline_beach_access_24"
-                    />
+                android:text="내가 올린 물건/장소"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="물건명,언제등등"
-                    android:textSize="25dp" />
+            <View
+                android:layout_margin="5dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
 
-
-            </LinearLayout>
 
             <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/ic_baseline_beach_access_24"
-                    />
+                android:layout_height="wrap_content">
 
-                <TextView
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/myItemRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="물건명,언제등등"
-                    android:textSize="25dp" />
-
+                    android:layout_height="match_parent"/>
 
             </LinearLayout>
-
-
-
-
         </LinearLayout>
-
-
-
     </ScrollView>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="150dp"
         android:layout_gravity="bottom"
         android:orientation="vertical">
 

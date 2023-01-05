@@ -21,6 +21,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rentalservice"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RequestUploadActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
@@ -52,6 +59,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity android:name=".PlaceList.PlaceList"/>
+        <activity android:name=".ChattingRoomActivity"/>
     </application>
 
 </manifest>

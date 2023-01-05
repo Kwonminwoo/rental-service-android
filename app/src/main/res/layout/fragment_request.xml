@@ -39,14 +39,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
+            android:orientation="vertical"
             android:background="#E9E9E9">
-
-            <TextView
+            <EditText
+                android:textSize="13sp"
+                android:hint="내용을 입력 하세요"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:text="1......">
-
-            </TextView>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
         <LinearLayout
@@ -55,7 +54,6 @@
             android:orientation="horizontal"
             android:layout_margin="20dp"
             android:padding="5dp">
-
 
             <Button
                 android:id="@+id/request_btn2"
@@ -66,21 +64,13 @@
                 android:text="요청" />
 
             <Button
-                android:id="@+id/registr_btn2"
+                android:id="@+id/cancel_btn2"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:backgroundTint="#3F51B5"
-                android:text="등록" />
+                android:text="취소" />
+
         </LinearLayout>
-
-
-
-
-
-
-
-
-
     </LinearLayout>
 </FrameLayout>
