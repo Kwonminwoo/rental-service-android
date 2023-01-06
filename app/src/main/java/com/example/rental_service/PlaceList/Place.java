@@ -32,4 +32,6 @@ public class Place {
     public void setComment(){
         this.comment=comment;
     }
+
+
 }
