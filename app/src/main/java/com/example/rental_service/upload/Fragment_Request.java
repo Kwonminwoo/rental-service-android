@@ -1,4 +1,4 @@
-package com.example.rental_service;
+package com.example.rental_service.upload;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Fragment_Upload extends Fragment {
+import com.example.rental_service.R;
 
-
-    public Fragment_Upload() {
-        // Required empty public constructor
-    }
-
+public class Fragment_Request extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container, @NonNull Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_upload, container, false);
+        View view = inflater.inflate(R.layout.fragment_request, container, false);
+        return view;
     }
 }

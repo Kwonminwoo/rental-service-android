@@ -9,6 +9,7 @@ public class Place {
     public Place(String name, String region, String comment) {
         this.name = name;
         this.region = region;
+        this.comment = comment;
     }
 
     public String getName(){
@@ -31,4 +32,6 @@ public class Place {
     public void setComment(){
         this.comment=comment;
     }
+
+
 }

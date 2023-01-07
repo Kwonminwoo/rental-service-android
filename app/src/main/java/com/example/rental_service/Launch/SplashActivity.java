@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.example.rental_service.Launch.LogIn.LoginActivity;
 import com.example.rental_service.MainActivity;
 import com.example.rental_service.R;
 
@@ -31,7 +32,7 @@ public class SplashActivity extends Activity {
                     }
                 });
 
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
             }
         }, 2000);

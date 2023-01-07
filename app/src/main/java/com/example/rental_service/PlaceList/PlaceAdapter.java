@@ -1,5 +1,7 @@
 package com.example.rental_service.PlaceList;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +16,14 @@ import java.util.ArrayList;
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> {
     ArrayList<Place> items =new ArrayList<>();
+    Context context;
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View itemView = inflater.inflate(R.layout.place_item,viewGroup,false);
+        context = viewGroup.getContext();
         return new ViewHolder(itemView);
     }
 
@@ -27,6 +31,13 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         Place item = items.get(position);
         viewHolder.setItem(item);
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, PlacePostActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

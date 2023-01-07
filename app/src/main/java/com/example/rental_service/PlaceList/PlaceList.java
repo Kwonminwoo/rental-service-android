@@ -24,9 +24,9 @@ public class PlaceList extends AppCompatActivity {
 
         //확인용
         adapter.addItem(new Place("사용자 A","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 A","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 A","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 A","천안 서북구", "넘 조아요"));
+        adapter.addItem(new Place("사용자 B","천안 서북구", "넘 조아요"));
+        adapter.addItem(new Place("사용자 C","천안 서북구", "넘 조아요"));
+        adapter.addItem(new Place("사용자 D","천안 서북구", "넘 조아요"));
 
         recyclerView.setAdapter(adapter);
     }

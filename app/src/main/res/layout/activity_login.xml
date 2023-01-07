@@ -25,7 +25,7 @@
         android:id="@+id/kakao_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="200dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/Kakao_api_key"
         android:minHeight="48dp"

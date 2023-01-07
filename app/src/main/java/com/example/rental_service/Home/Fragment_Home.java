@@ -1,5 +1,6 @@
 package com.example.rental_service.Home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -7,7 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.rental_service.PlaceList.PlaceList;
 import com.example.rental_service.R;
 
 import androidx.annotation.NonNull;
@@ -40,7 +43,24 @@ public class Fragment_Home extends Fragment {
         cdView_rentable = (CardView) view.findViewById(R.id.cdView_rentable_place);
 
         notice = (LinearLayout) view.findViewById(R.id.notice);
+        View placeBtn = view.findViewById(R.id.action_Place);
+        View stuffBtn = view.findViewById(R.id.action_Stuff);
         setData(view);
+
+        placeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), PlaceList.class);
+                startActivity(intent);
+            }
+        });
+
+        stuffBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 //        cdView_loanable.setOnClickListener(new View.OnClickListener() {
 //            @Override
