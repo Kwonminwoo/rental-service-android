@@ -26,15 +26,21 @@ public class LoginActivity extends AppCompatActivity {
         kakaoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 로그인 공통 callback 구성
-                UserApiClient.getInstance().loginWithKakaoTalk(LoginActivity.this,(oAuthToken, error) -> {
-                    if (error != null) {
-                        Log.e(TAG, "로그인 실패", error);
-                    } else if (oAuthToken != null) {
-                        Log.i(TAG, "로그인 성공(토큰) : " + oAuthToken.getAccessToken());
-                    }
-                    return null;
-                });
+
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+
+//                // 로그인 공통 callback 구성
+//                UserApiClient.getInstance().loginWithKakaoTalk(LoginActivity.this,(oAuthToken, error) -> {
+//                    if (error != null) {
+//                        Log.e(TAG, "로그인 실패", error);
+//                    } else if (oAuthToken != null) {
+//                        Log.i(TAG, "로그인 성공(토큰) : " + oAuthToken.getAccessToken());
+//                    }
+//                    return null;
+//                });
+
+
             }
         });
 
@@ -49,18 +55,18 @@ public class LoginActivity extends AppCompatActivity {
 
          */
 
-        UserApiClient.getInstance().me((user, meError) -> {
-            if (meError != null) {
-                Log.e(TAG, "사용자 정보 요청 실패", meError);
-            } else {
-                Log.i(TAG, "사용자 정보 요청 성공" +
-                        "\n회원번호: "+user.getId() +
-                        "\n이메일: "+user.getKakaoAccount().getEmail());
-            }
-            return null;
-        });
+//        UserApiClient.getInstance().me((user, meError) -> {
+//            if (meError != null) {
+//                Log.e(TAG, "사용자 정보 요청 실패", meError);
+//            } else {
+//                Log.i(TAG, "사용자 정보 요청 성공" +
+//                        "\n회원번호: "+user.getId() +
+//                        "\n이메일: "+user.getKakaoAccount().getEmail());
+//            }
+//            return null;
+//        });
 
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-        finish();
+//        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+//        finish();
     }
 }
