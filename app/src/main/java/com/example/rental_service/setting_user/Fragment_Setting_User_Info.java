@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Icon;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -97,7 +99,6 @@ public class Fragment_Setting_User_Info extends Fragment {
         b_recyclerView = v.findViewById(R.id.setting_rv_borrow);
         s_recyclerView = v.findViewById(R.id.setting_rv_serve);
         set_up_recylcler_view();
-
         b1=v.findViewById(R.id.button);
         text_name=v.findViewById(R.id.text_name_fieild);
         text_extra1=v.findViewById(R.id.text_additional_1);
@@ -106,7 +107,7 @@ public class Fragment_Setting_User_Info extends Fragment {
         LinearLayout layout = v.findViewById(R.id.texts_layout_on_setting);
         image_profile_view.setMinimumHeight(layout.getHeight());
         image_profile_view.setMinimumWidth(layout.getHeight());
-
+        image_profile_view.setImageResource(R.drawable.profile_images);
         image_profile_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,8 +115,9 @@ public class Fragment_Setting_User_Info extends Fragment {
 
             }
         });
-
-
+        text_name.setText("정선 하늘 정원");
+        text_extra1.setText("깅원도 정선군 하늘길 332-1");
+        text_extra2.setText("010-2222-1111");
         b1.setOnClickListener(view -> {
             get_review_data();
             get_B_data();
@@ -150,6 +152,34 @@ public class Fragment_Setting_User_Info extends Fragment {
         review_recyclerView.setAdapter(review_Adapter);
         b_recyclerView.setAdapter(b_Adapter);
         s_recyclerView.setAdapter(s_Adapter);
+
+
+        BsData bData = new BsData(223,"일본식 온천 가옥","2022-07-01","2022-07-03");
+        BsData bData1 = new BsData(223,"기모노","2022-07-01","2022-07-03");
+        BsData bData2 = new BsData(223,"가죽 가방","2022-07-01","2022-07-03");
+        BsData bData3 = new BsData(223,"여행용 캐리어","2022-07-01","2022-07-03");
+        BsData sData = new BsData(223,"정선 크나큰 정원","2022-07-11","2022-07-30");
+        BsData sData1 = new BsData(223,"정선 크나큰 정원","2022-08-01","2022-08-15");
+        BsData sData2 = new BsData(223,"정선 크나큰 정원","2022-08-17","2022-08-20");
+        BsData sData3 = new BsData(223,"정선 크나큰 정원","2022-08-21","2022-08-30");
+        ReviewData reviewData = new ReviewData(223, "주변도 조용하고 실내도 깨..", "★★★★★", "2022-07-30");
+        ReviewData reviewData1 = new ReviewData(223, "전원주택 한번 살아보고 싶었..", "★★★★", "2022-08-23");
+        ReviewData reviewData2 = new ReviewData(223, "급하게 필요했는데 잘 이용했..", "★★★★", "2022-09-21");
+        ReviewData reviewData3 = new ReviewData(223, "판매자분이 친절해요", "★★★★", "2022-11-15");
+
+        b_ArrayList.add(bData);
+        b_ArrayList.add(bData1);
+        b_ArrayList.add(bData2);
+        b_ArrayList.add(bData3);
+        s_ArrayList.add(sData);
+        s_ArrayList.add(sData1);
+        s_ArrayList.add(sData2);
+        s_ArrayList.add(sData3);
+
+        review_ArrayList.add(reviewData);
+        review_ArrayList.add(reviewData1);
+        review_ArrayList.add(reviewData2);
+        review_ArrayList.add(reviewData3);
     }
 
     public void get_review_data(){
@@ -157,7 +187,7 @@ public class Fragment_Setting_User_Info extends Fragment {
 
         for (int i=0;i<1;i++) {
 
-            ReviewData reviewData = new ReviewData(223, "전원주택 좋았네요 ㅋ", "★★★", "2022-07-30");
+            ReviewData reviewData = new ReviewData(223, "전원주택 좋았습니", "★★★", "2022-07-30");
             review_ArrayList.add(reviewData);
         }
         review_Adapter.notifyDataSetChanged();
@@ -169,6 +199,7 @@ public class Fragment_Setting_User_Info extends Fragment {
         for (int i=0;i<1;i++) {
             
             BsData bsData = new BsData(223, "고급 가죽가방", "2022-07-11", "2022-07-30");
+
             b_ArrayList.add(bsData);
         }
         b_Adapter.notifyDataSetChanged();
