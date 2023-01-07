@@ -1,7 +1,6 @@
-package com.example.rental_service;
+package com.example.rental_service.upload;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.rental_service.Home.Item;
+import com.example.rental_service.R;
 
 import java.util.ArrayList;
 import java.util.List;

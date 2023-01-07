@@ -1,6 +1,8 @@
-package com.example.rental_service;
+package com.example.rental_service.upload;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +15,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.rental_service.Home.ItemAdapter;
+import com.example.rental_service.R;
+import com.example.rental_service.upload.MyItem;
+import com.example.rental_service.upload.MyItemAdapter;
+import com.example.rental_service.upload.RequestUploadActivity;
 
 public class Fragment_Upload extends Fragment {
 
@@ -34,8 +39,27 @@ public class Fragment_Upload extends Fragment {
         reqBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), RequestUploadActivity.class);
-                startActivity(intent);
+                TypeChoiceActivity dialog = new TypeChoiceActivity(getContext());
+
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                dialog.setDialogListener(new DialogListener() {
+                    @Override
+                    public void onPositiveClicked(UploadType type) {
+                        Intent intent = null;
+                        switch (type){
+                            case STUFF:
+                                intent = new Intent(getContext(), RequestUploadActivity.class);
+                                break;
+                            case PLACE:
+                                intent = new Intent(getContext(), RequestUploadActivity.class);
+                                break;
+                        }
+                        startActivity(intent);
+                    }
+                });
+
+                dialog.show();
             }
         });
         recyclerView = view.findViewById(R.id.myItemRecycler);

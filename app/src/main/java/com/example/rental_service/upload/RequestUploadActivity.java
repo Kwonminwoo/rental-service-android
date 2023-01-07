@@ -1,10 +1,12 @@
-package com.example.rental_service;
+package com.example.rental_service.upload;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.rental_service.R;
 
 public class RequestUploadActivity extends AppCompatActivity {
     Button cancelBtn, reqBtn, objectBtn, placeBtn;
@@ -14,8 +16,6 @@ public class RequestUploadActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_request);
         cancelBtn = findViewById(R.id.cancel_btn2);
         reqBtn = findViewById(R.id.request_btn2);
-        objectBtn = findViewById(R.id.object_btn);
-        placeBtn = findViewById(R.id.place_btn);
 
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override

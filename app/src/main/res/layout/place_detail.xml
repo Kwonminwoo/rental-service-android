@@ -4,41 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/profile_image"
             android:background="@drawable/profile_circle"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="20dp" />
+            android:scaleType="fitXY"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30sp"
-                android:textSize="30sp"
-                android:text="닉네임"
-              />
+                android:textSize="18sp"
+                android:text="닉네임"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:textSize="15sp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="bottom"
+                android:textSize="13sp"
                 android:text="등록일 "/>
 
         </LinearLayout>
@@ -68,9 +68,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:layout_margin="15sp"
-        android:text="상세설명"
+        android:text="상세설명dnsakjdnksadksjankdsnakdnsakdnskandaknasdsadsadsadsadsadsadasdasdsadsadsadsadadaddsads"
         />
 
 

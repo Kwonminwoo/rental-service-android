@@ -1,4 +1,4 @@
-package com.example.rental_service;
+package com.example.rental_service.upload;
 
 public class MyItem {
     private int image;

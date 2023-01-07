@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.rental_service">
+    package="com.example.rental_service" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,10 +20,18 @@
         android:roundIcon="@mipmap/ic_app_main_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rentalservice"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
         <activity
-            android:name=".RequestUploadActivity"
-            android:exported="false">
+            android:name=".TypeChoiceActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".PlaceList.PlacePostActivity" />
+        <activity
+            android:name=".upload.RequestUploadActivity"
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -35,7 +43,7 @@
 
         <activity
             android:name=".Launch.SplashActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +52,7 @@
         </activity>
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -59,8 +67,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity android:name=".PlaceList.PlaceList"/>
-        <activity android:name=".ChattingRoomActivity"/>
+        <activity android:name=".PlaceList.PlaceList" />
+        <activity android:name=".ChattingRoomActivity" />
     </application>
 
 </manifest>
