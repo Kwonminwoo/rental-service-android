@@ -71,14 +71,10 @@ public class Fragment_Upload extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         MyItemAdapter itemAdapter = new MyItemAdapter();
         recyclerView.setAdapter(itemAdapter);
-        itemAdapter.addItem(new MyItem(R.drawable.auditourium, "이러이러한 물건입니다."));
-        itemAdapter.addItem(new MyItem(R.drawable.auditourium, "이러이러한 물건입니다."));
-        itemAdapter.addItem(new MyItem(R.drawable.auditourium, "이건 어때?"));
+        itemAdapter.addItem(new MyItem(R.drawable.auditourium, "강당 빌려드려요"));
+        itemAdapter.addItem(new MyItem(R.drawable.burner, "버너 있으신 분?"));
         itemAdapter.addItem(new MyItem(R.drawable.pot, "냄비 빌려요"));
-        itemAdapter.addItem(new MyItem(R.drawable.pot, "냄비 빌려요"));
-        itemAdapter.addItem(new MyItem(R.drawable.pot, "냄비 빌려요"));
-        itemAdapter.addItem(new MyItem(R.drawable.pot, "냄비 빌려요"));
-        itemAdapter.addItem(new MyItem(R.drawable.pot, "냄비 빌려요"));
+        itemAdapter.addItem(new MyItem(R.drawable.singingroom, "노래방 기계 있는 공간"));
     }
 
 }

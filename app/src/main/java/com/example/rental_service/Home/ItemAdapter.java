@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.rental_service.PlacePostActivity;
 import com.example.rental_service.R;
 
 import java.util.ArrayList;
@@ -42,6 +43,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "asdsadsadsad", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, PlacePostActivity.class);
+                context.startActivity(intent);
             }
         });
     }

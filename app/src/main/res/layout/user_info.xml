@@ -10,23 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="40dp">
+        android:layout_marginHorizontal="15dp"
+        android:padding="20dp">
 
         <ImageView
             android:id="@+id/profile_imageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/profile2"/>
 
         <TextView
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="닉네임"
-            android:layout_marginTop="40dp"
+            android:text="고양이"
             android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
             android:textSize="25dp"/>
+        <ImageButton
+            android:id="@+id/chatBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/chat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="채팅하기"/>
 
     </LinearLayout>
 
@@ -35,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="&lt;받은 후기&gt;"
-        android:layout_margin="40dp"
+        android:layout_marginHorizontal="40dp"
         android:textColor="@color/black"
         android:textSize="30dp"/>
 

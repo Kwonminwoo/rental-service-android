@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,20 +50,27 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
         TextView textView;
         TextView textView2;
         TextView textView3;
-
+        TextView itemTitle;
+        ImageView profileImg;
+        ImageView itemImg;
         public ViewHolder(View itemVIew){
             super(itemVIew);
 
             textView= itemVIew.findViewById(R.id.user_name);
             textView2= itemVIew.findViewById(R.id.user_region);
             textView3= itemVIew.findViewById(R.id.place_comment);
-
+            itemTitle = itemVIew.findViewById(R.id.itemTitle);
+            profileImg = itemVIew.findViewById(R.id.profile_image);
+            itemImg = itemVIew.findViewById(R.id.place_image);
         }
 
         public void setItem(Place item){
             textView.setText(item.getName());
             textView2.setText(item.getRegion());
             textView3.setText(item.getComment());
+            itemTitle.setText(item.getItemTitle());
+            profileImg.setImageResource(item.getProfileImg());
+            itemImg.setImageResource(item.getItemImg());
         }
     }
     public void addItem(Place item){

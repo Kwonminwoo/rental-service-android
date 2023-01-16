@@ -138,7 +138,7 @@ public class Fragment_Home extends Fragment {
         rePlaceReq.setAdapter(pReqAdapter);
 
         // 대여 가능 물건
-        sPosAdapter.addItem(setItem("밥솥", "2022.12.12.", R.drawable.rice, "밥솥 빌려드려요", "권민우"));
+        sPosAdapter.addItem(setItem("밥솥", "2022.12.12.", R.drawable.rice, "밥솥 빌려드려요", "고양이"));
         sPosAdapter.addItem(setItem("냄비", "2022.12.19.", R.drawable.pot, "냄비 빌려드려요", "김이런"));
         sPosAdapter.addItem(setItem("가스 버너", "2022.12.23.", R.drawable.burner, "가스버너 남습니다", "aggqw"));
 

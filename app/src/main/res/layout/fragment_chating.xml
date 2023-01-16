@@ -20,7 +20,7 @@
             android:paddingStart="20dp"
             android:paddingTop="20dp"
             android:paddingEnd="0dp"
-            android:text="테스트1"
+            android:text="채팅"
             android:textSize="28sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"

@@ -23,10 +23,10 @@ public class PlaceList extends AppCompatActivity {
         PlaceAdapter adapter = new PlaceAdapter();
 
         //확인용
-        adapter.addItem(new Place("사용자 A","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 B","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 C","천안 서북구", "넘 조아요"));
-        adapter.addItem(new Place("사용자 D","천안 서북구", "넘 조아요"));
+        adapter.addItem(new Place("고양이","천안시 서북구", "파티룸 빌려드려요","파티룸", R.drawable.profile2, R.drawable.partiroom));
+        adapter.addItem(new Place("사용자 B","천안 서북구", "넘 조아요", "멀티룸", R.drawable.profile1, R.drawable.multiroom));
+        adapter.addItem(new Place("사용자 C","천안 서북구", "넘 조아요","ㅇㅇㅇ", R.drawable.profile3, R.drawable.tent));
+        adapter.addItem(new Place("사용자 D","천안 서북구", "넘 조아요", "ㅁㄴㄻㄴㅇㄴㅁ", R.drawable.profile4, R.drawable.tent));
 
         recyclerView.setAdapter(adapter);
     }
